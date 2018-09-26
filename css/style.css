@@ -1,0 +1,202 @@
+/* 3d flip animation start */
+:root{
+    --main-height:12rem;
+    --main-width:100%;
+    --hight:4.2rem;
+    --width:10rem;
+}
+
+.main{
+    width: 100%;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+.logoMain{
+    height: 80%;
+    width: 100%;
+    display: block;
+}
+.socialIcons{
+    display: block;
+position: relative;
+height: 100%;
+width: 200px;
+}
+.subSocialIcons{
+position: absolute;
+top: 50%;
+right: 2rem;
+transform: translateY(-50%);
+}
+.brand-logo{
+    font-family: 'Times New Roman', Times, serif;
+}
+.cube{
+    padding: 1rem;
+    perspective: 2000px;
+    width: var(--main-width);
+    height: var(--main-height);
+    margin: auto;
+}
+
+.sub{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.side{
+    position: absolute;
+    background: #cb1414;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+.back{
+    transform-style: preserve-3d;
+    transform: rotateX(250deg) translateZ(var(--hight))  translateY(var(--hight));
+    background: rgba(100,100,100,0.5); 
+}
+
+.cube:hover .sub{
+    transform-style: preserve-3d;
+    transform: rotateX(110deg) translateZ(var(--hight));
+
+}
+/* 3d flip animation end */
+
+.navbarFixed{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: url(../images/background1.png);
+}
+#fullSlider{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.aboutRow{
+    padding: 50px;
+}
+.subNews{
+    width: 100%;
+    /* padding: 50px; */
+    margin-top: 20px;
+
+}
+.NewsRow{
+    margin: 0px;
+}
+.card{
+    margin-top: 20px;
+    margin-bottom:20px; 
+}
+#services{
+    width: 100%;
+    margin-top: 20px;
+    z-index: -1;
+}
+
+
+.NewsRowInner{
+    width: 1200%;
+}
+/* slider For News */
+.card-image{
+    height: 200px;
+}
+.card-image>img{
+    height: 200px;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+   
+
+    
+}
+#newsEvents{
+    margin-top: 10rem;
+}
+.cubeBox{
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.clientsIcon{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #cb1414;
+    margin: auto;
+}
+.clientsRow{
+    margin-top: 30px;
+}
+.divider{
+    margin-top: 30px;
+}
+.redBack{
+    background: url(../images/background1.png);
+    background-size:contain; 
+}
+.subTeam{
+    padding: 50px 10px;
+}
+.card-content{
+    height: 10rem;
+    overflow: hidden;
+}
+.imgback{
+    position: absolute;
+    top:20px;
+    left: -20px;
+    right: 20px;
+    bottom: -20px;
+    z-index: -1;
+}
+.imgOfCeo{
+    z-index: 2;
+}
+.ceoImg{
+    width: 250px;
+    height: 300px;
+    position: relative;
+    left: 10%;
+    border: 1px solid gray;
+}
+.circlePic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid rgb(170, 169, 169);
+    margin:auto; 
+    
+}
+.nameRanke{
+    height: 150px;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+}
+.outWborder{
+    height: 198px;
+    width: 197px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+}
