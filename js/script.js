@@ -75,34 +75,6 @@ function autoslider() {
 }
 autoslider();
 
-row = document.querySelector('.clientsRow');
-cube;
-row.innerHTML = '';
-for (var i = 0; i < 3; i++) {
-  cube = '';
-  for (var j = 0; j < 3; j++) {
-    if (j === 0) {
-      animi = 'fadeInLeft';
-    }
-    else if (j === 1) {
-      animi = 'fadeIn';
-    }
-    else {
-      animi = 'fadeInRight';
-    }
-    cube += `
-    <div class="col s12 m4 center">
-                        <div class="clientsIcon wow ${animi}">
-
-                        </div>
-                </div>
-    `;
-  }
-  row.innerHTML += `<div class='row'>
-  ${cube}
-  </div>
-  `;
-}
 // wow.js
 wow = new WOW(
   {
