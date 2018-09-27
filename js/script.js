@@ -1,21 +1,21 @@
+
 // Slider
 var news = document.querySelector('.NewsRow');
 news.innerHTML = '';
 var k = 0;
-var animi='';
+var animi = '';
 for (var i = 0; i < 4; i++) {
   var subNews = '';
   for (var j = 0; j < 3; j++) {
     k++;
-    if(j===0){
-      animi='fadeInLeft';
+    if (j === 0) {
+      animi = 'fadeInLeft';
     }
-    else if(j===1)
-    {
-      animi='fadeIn';
+    else if (j === 1) {
+      animi = 'fadeIn';
     }
-    else{
-      animi='fadeInRight';
+    else {
+      animi = 'fadeInRight';
     }
     subNews += `
     <div class="col s12 m4">
@@ -74,57 +74,21 @@ function autoslider() {
   setTimeout(autoslider, 3000)
 }
 autoslider();
-// cubes
-var row = document.querySelector('#flexCube');
-var cube;
-row.innerHTML = '';
-for (var i = 0; i < 3; i++) {
-  cube = '';
-  for (var j = 0; j < 3; j++) {
-    if(j===0){
-      animi='fadeInLeft';
-    }
-    else if(j===1)
-    {
-      animi='fadeIn';
-    }
-    else{
-      animi='fadeInRight';
-    }
-    cube += `
-    <div class="col s12 m4 cubeBox">
-                                <div class="cube wow ${animi}">
-                                        <div class="sub">
-                                            <div class="side front redBack">
-                                                1
-                                            </div>
-                                            <div class="side back">2</div>
-                                        </div>
-                                    </div>
-                        </div>
-    `;
-  }
-  row.innerHTML += `<div class='row'>
-  ${cube}
-  </div>
-  `;
-}
-// cube end
+
 row = document.querySelector('.clientsRow');
 cube;
 row.innerHTML = '';
 for (var i = 0; i < 3; i++) {
   cube = '';
   for (var j = 0; j < 3; j++) {
-    if(j===0){
-      animi='fadeInLeft';
+    if (j === 0) {
+      animi = 'fadeInLeft';
     }
-    else if(j===1)
-    {
-      animi='fadeIn';
+    else if (j === 1) {
+      animi = 'fadeIn';
     }
-    else{
-      animi='fadeInRight';
+    else {
+      animi = 'fadeInRight';
     }
     cube += `
     <div class="col s12 m4 center">
@@ -140,14 +104,13 @@ for (var i = 0; i < 3; i++) {
   `;
 }
 // wow.js
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100,
-        callback:     function(box) {
-          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-        }
-      }
-    );
-    wow.init();
-  
+wow = new WOW(
+  {
+    animateClass: 'animated',
+    offset: 100,
+    callback: function (box) {
+      console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+    }
+  }
+);
+wow.init();
