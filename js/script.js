@@ -39,14 +39,14 @@ for (var i = 0; i < 4; i++) {
 
   }
   news.innerHTML += `
-  <div class="slide">
+  <div class="sliders">
   ${
     subNews
     }
   </div>`;
 }
 // slider News
-var slideImages = document.querySelectorAll('.slide');
+var slideImages = document.querySelectorAll('.sliders');
 current = 0;
 
 function reset() {
