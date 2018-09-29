@@ -120,17 +120,6 @@ transform: translateY(-50%);
 .card-image>img{
     height: 200px;
 }
-
-
-
-
-
-@media only screen and (max-width: 600px) {
-
-   
-
-    
-}
 #newsEvents{
     margin-top: 10rem;
 }
