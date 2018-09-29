@@ -65,6 +65,7 @@ transform: translateY(-50%);
     transform-style: preserve-3d;
     transform: rotateX(250deg) translateZ(var(--hight))  translateY(var(--hight));
     background: rgba(100,100,100,0.5); 
+    color: white;
 }
 
 .cube:hover .sub{
