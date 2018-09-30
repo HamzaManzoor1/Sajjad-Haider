@@ -1,4 +1,7 @@
-
+setTimeout(function(){
+  main.style.display='block';
+  ajxLoader.style.display='none';
+},3000)
 // Slider
 var news = document.querySelector('.NewsRow');
 news.innerHTML = '';

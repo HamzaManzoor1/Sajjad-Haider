@@ -15,11 +15,47 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/wow.min.js"></script>
+    <style>
+        #ajxLoader{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10000;
+        background: white;
+    }
+    #ajxLoaderImg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100px;
+        mix-blend-mode: multiply;    
+    }
+    </style>
 
 </head>
 
 <body>
-    <div class="main">
+    <div id="ajxLoader">
+        <div id="ajxLoaderImg">
+            <div class="preloader-wrapper active">
+                <div class="spinner-layer spinner-red-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
         <header>
             <a class="logoIcons">
                 <img src="images/logo.png" class="wow fadeInLeft" height="150px" style="margin-left:20px;" alt="logo">
@@ -240,7 +276,7 @@
                                 </div>
                                 <div class="side back redBack">
                                     <h1 style="margin-top:10px;">
-                                            Aluminum Worker
+                                        Aluminum Worker
                                     </h1>
                                 </div>
                             </div>
@@ -254,7 +290,7 @@
                                 </div>
                                 <div class="side back redBack">
                                     <h1>
-                                            Tile Worker
+                                        Tile Worker
                                     </h1>
                                 </div>
                             </div>
@@ -268,7 +304,7 @@
                                 </div>
                                 <div class="side back redBack">
                                     <h1>
-                                            Cleaner
+                                        Cleaner
                                     </h1>
                                 </div>
                             </div>
@@ -285,7 +321,7 @@
                                 </div>
                                 <div class="side back redBack">
                                     <h1>
-                                            AC Technician
+                                        AC Technician
                                     </h1>
                                 </div>
                             </div>
@@ -300,7 +336,7 @@
                                 </div>
                                 <div class="side back redBack">
                                     <h1>
-                                            Carpenter
+                                        Carpenter
                                     </h1>
                                 </div>
                             </div>
