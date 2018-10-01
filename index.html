@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>
+            Sajjad Haider Technical Services
+    </title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/animation.css">
@@ -31,14 +33,13 @@
         left: 50%;
         transform: translate(-50%,-50%);
         width: 400px;
-
         mix-blend-mode: multiply;    
     }
     </style>
 
 </head>
 
-<body>
+<body onscroll="scrollChanger()">
     <div id="ajxLoader">
         <img src="images/index.triple-gears-loading-icon.svg" id="ajxLoaderImg" alt="Preloader">
     </div>
@@ -65,7 +66,7 @@
                 </div>
             </div>
         </header>
-        <nav class="navbarFixed">
+        <nav class="navbarFixed" id="navbFixed">
             <div class="container nav-wrapper">
                 <a href="#" class="brand-logo">
                     Sajjad Haider
@@ -416,32 +417,31 @@
             </h3>
             <div class=" subTeam">
                 <div id="CEO">
-                    <div class="row">
-                        <div class="col s12 m6 wow fadeInLeft">
-                            <h4>
-                                CEO Message
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel possimus enim eligendi
-                                laboriosam exercitationem esse consequuntur a. Excepturi, quod, assumenda quidem amet
-                                consequatur labore in deleniti aperiam sunt veritatis tempora?
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, laboriosam natus quis
-                                expedita maiores eius quos, possimus dicta suscipit, totam enim. Voluptatum velit
-                                minima repudiandae impedit numquam corrupti, sed odio!
-                            </p>
-                        </div>
-                        <div class="col s12 m6 wow fadeInRight">
-                            <div class=" white ceoImg">
-                                <div class="redBack imgback"></div>
-                                <div>
-                                    <img src="images/user-solid.svg" class="responsive-img imgOfCeo" alt="CEO img">
+                    <div class="container">
+                            <div class="row">
+                                    <div class="col s12 m6 offset-m1 wow fadeInLeft">
+                                        <h4>
+                                            CEO Message
+                                        </h4>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel possimus enim eligendi
+                                            laboriosam exercitationem esse consequuntur a. Excepturi, quod, assumenda quidem amet
+                                            consequatur labore in deleniti aperiam sunt veritatis tempora?
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, laboriosam natus quis
+                                            expedita maiores eius quos, possimus dicta suscipit, totam enim. Voluptatum velit
+                                            minima repudiandae impedit numquam corrupti, sed odio!
+                                        </p>
+                                    </div>
+                                    <div class="col s12 m4 wow fadeInRight">
+                                        <div class=" white ceoImg">
+                                                <img src="images/user-solid.svg" class="responsive-img imgOfCeo" alt="CEO img">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="row" style="margin-top:3rem;">
                         <div class="col s12 m6">
-                            <div class="circlePic">
+                            <div class="circlePic z-depth-5">
                                 <div class="outWborder">
                                     <img src="images/user-solid.svg" alt="User">
                                 </div>
@@ -456,7 +456,7 @@
                             </div>
                         </div>
                         <div class="col s12 m6">
-                            <div class="circlePic">
+                            <div class="circlePic z-depth-5">
                                 <div class="outWborder">
                                     <img src="images/user-solid.svg" alt="User">
                                 </div>
@@ -473,7 +473,7 @@
                     </div>
                     <div class="row">
                         <div class="col s12 m3">
-                            <div class="circlePic">
+                            <div class="circlePic z-depth-5">
                                 <div class="outWborder">
                                     <img src="images/user-solid.svg" alt="User">
                                 </div>
@@ -488,7 +488,7 @@
                             </div>
                         </div>
                         <div class="col s12 m3">
-                            <div class="circlePic">
+                            <div class="circlePic z-depth-5">
                                 <div class="outWborder">
                                     <img src="images/user-solid.svg" alt="User">
                                 </div>
@@ -503,7 +503,7 @@
                             </div>
                         </div>
                         <div class="col s12 m3">
-                            <div class="circlePic">
+                            <div class="circlePic z-depth-5">
                                 <div class="outWborder">
                                     <img src="images/user-solid.svg" alt="User">
                                 </div>
@@ -518,7 +518,7 @@
                             </div>
                         </div>
                         <div class="col s12 m3">
-                            <div class="circlePic">
+                            <div class="circlePic z-depth-5">
                                 <div class="outWborder">
                                     <img src="images/user-solid.svg" alt="User">
                                 </div>
@@ -594,8 +594,7 @@
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    © 2018 Copyright by Sajjad Haider
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                    © 2018 Copyright by Sajjad Haider Technical Services
                 </div>
             </div>
         </footer>

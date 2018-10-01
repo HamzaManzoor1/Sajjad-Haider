@@ -1,7 +1,6 @@
 setTimeout(function(){
-  main.style.display='block';
   ajxLoader.style.display='none';
-},3000)
+},2500)
 // Slider
 var news = document.querySelector('.NewsRow');
 news.innerHTML = '';
@@ -47,6 +46,16 @@ for (var i = 0; i < 4; i++) {
     subNews
     }
   </div>`;
+}
+// nav bar
+var scrollHeight=screen.height;
+function scrollChanger(){
+    if(window.scrollY>scrollHeight){
+      navbFixed.style.position='fixed';
+    }
+    if(window.scrollY<scrollHeight){
+      navbFixed.style.position='static';      
+    }
 }
 // slider News
 var slideImages = document.querySelectorAll('.sliders');

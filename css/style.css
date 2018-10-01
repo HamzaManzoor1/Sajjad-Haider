@@ -76,7 +76,7 @@ transform: translateY(-50%);
 /* 3d flip animation end */
 
 .navbarFixed{
-    position: sticky;
+    position: static;
     top: 0px;
     z-index: 10;
     background: url(../images/background1.png);
@@ -153,14 +153,6 @@ transform: translateY(-50%);
     height: 10rem;
     overflow: hidden;
 }
-.imgback{
-    position: absolute;
-    top:20px;
-    left: -20px;
-    right: 20px;
-    bottom: -20px;
-    z-index: -1;
-}
 .imgOfCeo{
     z-index: 2;
 }
@@ -169,7 +161,11 @@ transform: translateY(-50%);
     height: 300px;
     position: relative;
     left: 10%;
+    margin: auto;
     border: 1px solid gray;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: -20px 20px black;
 }
 .circlePic{
     height: 200px;
