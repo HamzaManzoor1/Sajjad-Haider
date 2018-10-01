@@ -165,7 +165,7 @@ transform: translateY(-50%);
     border: 1px solid gray;
     padding: 5px;
     overflow: hidden;
-    box-shadow: -20px 20px black;
+    box-shadow: -20px 20px 20px #cb1414;
 }
 .circlePic{
     height: 200px;
